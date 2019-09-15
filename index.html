@@ -18,7 +18,7 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 			<ul>
-				<li><button type="button">Войти</button></li>
+				<li><a href="login.html">Войти</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -81,8 +81,25 @@
 		<section>
 			<h2>Записаться</h2>
 			<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-			<!--Здесь будет форма-->
-			<button type="button">Отправить</button>			
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="appointment-date">Дата</label>
+					<input type="text" name="date" id="appointment-date" value="" placeholder="08.10.2017">
+				</p>
+				<p>
+					<label for="appointment-time">Время</label>
+					<input type="text" name="time" id="appointment-time" value="" placeholder="10:00">
+				</p>
+				<p>
+					<label for="appointment-name">Ваше имя</label>
+					<input type="text" name="name" id="appointment-name" value="" placeholder="Борода">
+				</p>
+				<p>
+					<label for="appointment-phone">Телефон</label>
+					<input type="tel" name="telephone" id="appointment-phone" value="" placeholder="+7-123-456-78-90">
+				</p>
+				<button type="submit">Отправить</button>	
+			</form>			
 		</section>
     </main>
 	<footer>
@@ -113,13 +130,28 @@
 	<section>
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль</p>
-		<!--Здесь будет форма-->
-		<button type="button">Закрыть</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-login">Логин</label>
+                <input type="text" placeholder="Логин" id="user-login" name="login">
+            </p>
+            <p>
+                <label for="user-password">Пароль</label>
+                <input type="password" placeholder="Пароль" id="user-password" name="password">
+            </p>
+            <p>
+                <label><input type="checkbox"> Запомнить меня</label>
+                <a href="#">Я забыл пароль!</a>
+            </p>
+            <button type="submit">Войти</button>
+        </form>
+        <button type="button">Закрыть</button>
 	</section>
 	<section>
     	<h2>Как до нас добраться</h2>
-    	<img src="img/map.png" alt="Карта офиса по адресу: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" width="766" height="560">
-    	<button type="button">Закрыть</button>
+    	<p>
+    		<img src="img/map.png" alt="Карта офиса по адресу: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" width="766" height="560">
+    	</p><button type="button">Закрыть</button>
     </section>
   </body>
 </html>
